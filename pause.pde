@@ -1,4 +1,5 @@
-void pause() {
+void pausescreen() {
+  background(pinkie);
   
   
 }

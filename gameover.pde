@@ -1,9 +1,14 @@
 void gameover() {
-  background(255);
+  background(pinkie);
   
+  music.pause();
+  failure.play();
+  
+  text("gameover :(", 400, 250);
+  text("click anywhere to restart!!", 400, 350);
 }
 
-void gameoverclick() {
+void gameoverclick() { 
   mode = intro;
-  
+  music.rewind();
 }
