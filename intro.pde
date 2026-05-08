@@ -27,5 +27,7 @@ void intro() {
 void introclick() {
   if(mouseX > 200 && mouseX < 600 && mouseY > 400 && mouseY < 600) {
   mode = game;
+  lives = 3;
+  score = 0;
   } 
 }
