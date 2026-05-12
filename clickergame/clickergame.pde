@@ -1,3 +1,14 @@
+//--images & stamp functions
+PImage pusheen;
+
+PImage heart;
+
+PImage hk;
+
+
+
+
+
 
 //--music necessities
 import ddf.minim.*;
@@ -19,6 +30,7 @@ final int options = 4;
 //float variables
 float x, y, z;
 float vx, vy;
+float a = random(0, 2*PI);
 int score, lives;
 
 //colour variables
@@ -33,17 +45,20 @@ void setup() {
   size(800, 800);
   textAlign(CENTER, CENTER);
   rectMode(CENTER);
+  imageMode(CENTER);
   
+  
+  //-- target 
   x = width/2;
   y = height/2;
   z = 100;
-  vx = random(-5, 5);
-  vy = random(-5, 5);
+  vx = 5*sin(a);
+  vy = 5*cos(a);
   
   score = 0;
   lives = 3;
   
-  
+  //mode
   mode = intro;
   
   //music
@@ -51,6 +66,13 @@ void setup() {
   music = minim.loadFile("MUSIC.mp3");
   success = minim.loadFile("SUCCESS.wav");
   failure = minim.loadFile("FAILURE.wav");
+  
+  //images
+  pusheen = loadImage("sleepypusheen.png");
+  
+  heart = loadImage("pusheen.png");
+  
+  hk = loadImage("hk.png");
 }
 
 void draw() {

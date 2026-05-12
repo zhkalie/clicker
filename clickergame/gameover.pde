@@ -6,6 +6,8 @@ void gameover() {
   
   text("gameover :(", 400, 250);
   text("click anywhere to restart!!", 400, 350);
+  text("highscoree:", 400, 500);
+  
 }
 
 void gameoverclick() { 
