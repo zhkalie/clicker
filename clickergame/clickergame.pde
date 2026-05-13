@@ -1,11 +1,16 @@
 //--images & stamp functions
 PImage pusheen;
+boolean pv;
 
 PImage heart;
+boolean hv;
 
 PImage hk;
+boolean hkv;
 
-
+//--slider variables
+float slidery;
+float size;
 
 
 
@@ -69,10 +74,13 @@ void setup() {
   
   //images
   pusheen = loadImage("sleepypusheen.png");
+  pv = true;
   
   heart = loadImage("pusheen.png");
+  hv = false;
   
   hk = loadImage("hk.png");
+  hkv = false;
 }
 
 void draw() {
