@@ -36,11 +36,12 @@ final int options = 4;
 float x, y, z;
 float vx, vy;
 float a = random(0, 2*PI);
-int score, lives;
+int score, lives, highscore;
 
 //colour variables
 color pinkie = #F0DAE5;
 color cocoa = #C49F7D;
+color grey = #D3CEC2;
 
 //sound variables
 Minim minim;
@@ -81,6 +82,9 @@ void setup() {
   
   hk = loadImage("hk.png");
   hkv = false;
+  
+  slidery = 445;
+  size = 0;
 }
 
 void draw() {

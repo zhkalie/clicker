@@ -10,4 +10,11 @@ void mouseReleased() {
   }else if (mode == gameover) { 
     gameoverclick();
   }
+  
+  slider();
+}
+
+
+void mouseDragged() {
+  slider();
 }
