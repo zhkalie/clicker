@@ -60,50 +60,11 @@ void optionsclick() {
   }
   
   //rect(400, 600, 200, 80);
-  if(mouseX > 300 && mouseX < 500 && mouseY > 600 && mouseY < 640) {
+  if(mouseX > 300 && mouseX < 500 && mouseY > 560 && mouseY < 640) {
   mode = intro;
   }
   
 }
-
-
-//void pv() {
-//  if (pv == true)) {
-//    fill(pinkie);
-//    stroke(grey);
-//    stroke(7);
-//  }else {
-//    stroke(pinkie);
-//    strokeWeight(5);
-//  }
-//}
-
-
-//void hkv() {
-//  if (hkv == true)) {
-//    fill(pinkie);
-//    stroke(grey);
-//    stroke(7);
-//  }else {
-//    stroke(pinkie);
-//    strokeWeight(5);
-//  }
-//}
-
-//void hv() {
-//  if (hv == true)) {
-//    fill(pinkie);
-//    stroke(grey);
-//    stroke(7);
-//  }else {
-//    stroke(pinkie);
-//    strokeWeight(5);
-//  }
-//}
-
-
-
-
 
 
 void slider () {
