@@ -14,13 +14,33 @@ void game() {
   stroke(255);
   fill(255);
   textSize(50);
-  text("Score: " + score, width/2, z);
-  text("Lives: " + lives, width/2, z*2);
+  text("Score: " + score, width/2, 70);
+  text("Lives: " + lives, width/2, 140);
   
-  fill(255);
   noStroke();
-  circle(x, y, z);
   
+  if(ball == 0) {
+    fill(255);
+    circle(x, y, z);
+  }
+  
+  if(ball == 1){
+    fill(255);
+    circle(x, y, z);
+    image(pusheen, x, y, z, z);
+  }
+  
+    if(ball == 2){
+    fill(255);
+    circle(x, y, z);
+    image(hk, x, y, z, z);
+  }
+  
+    if(ball == 3){
+    fill(255);
+    circle(x, y, z);
+    image(heart, x, y, z, z);
+  }
   
   x = x + vx;
   y = y + vy;
@@ -35,7 +55,7 @@ void game() {
 }
 
 void gameclick() {
-  if ( dist(mouseX, mouseY, x, y) < z) {
+  if ( dist(mouseX, mouseY, x, y) < z/2) {
    score = score + 1; 
    success.rewind();
    success.play();

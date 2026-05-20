@@ -10,7 +10,7 @@ boolean hkv;
 
 //--slider variables
 float slidery;
-float size;
+
 
 
 
@@ -37,8 +37,10 @@ float x, y, z;
 float vx, vy;
 float a = random(0, 2*PI);
 int score, lives, highscore;
+int ball = 0;
 
 //colour variables
+color lp = #FAE8F1;
 color pinkie = #F0DAE5;
 color cocoa = #C49F7D;
 color grey = #D3CEC2;
@@ -84,7 +86,6 @@ void setup() {
   hkv = false;
   
   slidery = 445;
-  size = 0;
 }
 
 void draw() {
